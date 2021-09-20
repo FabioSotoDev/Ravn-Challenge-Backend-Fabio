@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Authors Revenues</title>
+    </head>
+    <body>
+        <h1>Authors Revenues</h1>
+        <p>Insert count number to get that amount of top authors</p>
+        <form action="/" method="GET">
+            <p>Count Number</p>
+            <input name="count"></input>
+            <button type="submit">
+                Send
+            </button>
+        </form>
+        <h1>TOP <%= count %> authors </h1>
+        <% for(var i = 0; i < data.length; i++) {%>
+            <li>
+              <span> <%= data[i].name %> <%= data[i].total_sales %> </span>
+            </li>
+          <% } %>
+    </body>
+</html>
