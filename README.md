@@ -27,3 +27,4 @@ Basic Endpoint:
   - "endpoint" folder contains 2 files:
       * "endpoint.js" to use express and develop the basic endpoint, also internally doing cache perfomance.
       * "index.ejs"to show the web page with te required data.
+  - "node endpoint/endpoint.js" command starts the endpoint in 3000 port, and we can check the endpoint in localhost/3000
